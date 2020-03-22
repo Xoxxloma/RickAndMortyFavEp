@@ -19,3 +19,17 @@ code {
 .h300 {
   height: 300px;
 }
+
+.card_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card_row>.col {
+  display: flex;
+}
+
+.card {
+  padding-bottom: 30px;
+}
+

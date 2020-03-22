@@ -51,7 +51,7 @@ export const HomePage: React.FC = () => {
   }
 
   return (
-    <div className="row">
+    <div className="row card_row">
       <React.Suspense fallback={<div>loading...</div>}>
         <Cards {...props} />
       </React.Suspense>

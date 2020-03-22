@@ -1,9 +1,9 @@
 import React, { useEffect, useContext } from 'react';
-import { StoreContext } from './store';
+import { StoreContext } from '../store';
 import axios from 'axios';
-import { IEpisode, IAction } from './interfaces';
+import { IEpisode, IAction } from '../interfaces';
 
-const Cards = React.lazy<any>(() => import('./card'))
+const Cards = React.lazy<any>(() => import('../components/card'))
 
 export const HomePage: React.FC = () => {
 

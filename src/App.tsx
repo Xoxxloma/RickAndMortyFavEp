@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import './App.css';
 import { Navbar } from './components/navbar';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { HomePage } from './homePage';
-import { FavPage } from './fav';
+import { HomePage } from './pages/homePage';
+import { FavPage } from './pages/fav';
 import { StoreContext } from './store';
 
 function App() {

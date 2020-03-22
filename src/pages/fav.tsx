@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { StoreContext } from './store';
-import { IEpisode } from './interfaces';
+import { StoreContext } from '../store';
+import { IEpisode } from '../interfaces';
 
 export const FavPage: React.FC = () => {
   const { state } = useContext(StoreContext)

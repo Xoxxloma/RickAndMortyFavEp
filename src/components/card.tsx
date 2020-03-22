@@ -1,5 +1,5 @@
 import React from 'react';
-import { IEpisode } from './interfaces';
+import { IEpisode } from '../interfaces';
 
 const cutter = (str: string) => {
   return str.slice(3, str.length - 4)

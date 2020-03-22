@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useContext } from 'react';
 import './App.css';
+import { Navbar } from './components/navbar';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HomePage } from './homePage';
+import { FavPage } from './fav';
+import { StoreContext } from './store';
 
 function App() {
+
+  const { state } = useContext(StoreContext)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <div className="container">
+        <h1 className="center">Rick rick this is our app</h1>
+        <p className="center">Morty I'm a pickle &nbsp;<img style={{width: "50px", height: "50px"}} src="https://i.pinimg.com/originals/4b/79/79/4b79793d2fc4b9a87cb307681bb2f186.png" alt="pickle" /> and we have {state.favourites.length} favorite episodes</p>
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/fav" component={FavPage} />
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-wrapper {
+  background: linear-gradient(to right, #f57f17 15%, #ffff00 30%, #00e676 45%, #76ff03 60%, #00b0ff 75%, #512da8 90%);
+}
+
+.h300 {
+  height: 300px;
+}
